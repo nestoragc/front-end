@@ -9,17 +9,86 @@ body {
 /* Style the header */
 header {
   display: flex;
-  justify-content: flex-start;
   background-color: #FFFFFF;
-  padding: 30px;
-  text-align: center;
-  font-size: 12px;
-  color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; 
+  justify-content: space-between;
 }
 
-<h4> {
-  font-size: 14px;
+.header-start { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 155px;
+  margin-left: 15px;
 }
+
+.header-start button {
+  background-color: white;
+  border: none;
+  height: 60px;
+}
+
+.header-start .logo {
+  display: flex;
+  color: red;
+  font-size: 30px;
+  height: 60px;
+  align-items: center;
+}
+
+.header-start .logo .text-logo {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  }
+header .search-container {
+  display: flex;
+  width: 750px;
+  height: 40px; 
+  justify-content: right;
+  margin-top: 8px;
+}
+
+header input[type=text] {
+  height: 40px; 
+  width: 540px;
+  font-size: 17px;
+  border-style: ridge;
+  border-width: 1px;
+  margin-right: -6px;
+}
+
+header .search-container button {
+  height: 40px; 
+  width: 64px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+header .search-container .icon-microphone button {
+  background-color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-end {
+  display: flex;
+  color: black;
+  width: 225px; 
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+.header-end button {
+  border: none;
+  background-color: white;
+}
+
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
