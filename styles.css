@@ -99,16 +99,15 @@ header .search-container .icon-microphone button {
 
 .side-nav {
   display: flex;
-  position: relative;
+  position: fixed;
   flex-direction: column;
   justify-content: space-around;
   width: 4%;
-  height: 315px;
   float: left;
-  margin-bottom: 50%;
 }
 
 .side-nav button {
+  padding: 20px;
   background-color: white;  
   border: none;
   cursor: pointer;
@@ -116,10 +115,13 @@ header .search-container .icon-microphone button {
 
 nav {
   display: flex;
-  position: relative;
+  position: fixed;
   width: 96%;
   height: 60px; 
   float: right;
+  z-index: 1;
+  left: 5%;
+  background-color: white;
   border-bottom: 1px solid lightgray;
   justify-content: space-around;
   align-items: center;
@@ -141,14 +143,17 @@ nav button:hover {
 }
 
 .videos-container {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 96%;
-  top: 60px;
-  left: 4%;
+  top: 61px;
+  right: -4%;
 }
 
 .videos-container iframe{
-  width="360"; 
-  height="200"; 
+  width: 300px;
+  height: 200px;
+  margin: 35px 30px 10px 24px;
 }
 
